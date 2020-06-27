@@ -1,0 +1,100 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic");
+@import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
+@import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
+@import url(../node_modules/owl.carousel/dist/assets/owl.carousel.min.css);
+@import url(../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css);
+body {
+  font-family: 'Lato', 'Arial', sans-serif; }
+
+.home {
+  background-image: url("../imgs/home-bg.jpg");
+  height: 99vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.title-home {
+  color: #a5b8c3;
+  font-size: .6em; }
+
+.home .home-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  text-align: center; }
+  .home .home-text h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 3em;
+    word-spacing: 4px;
+    letter-spacing: 1px; }
+  .home .home-text h2 {
+    font-size: 3.5em; }
+  .home .home-text p {
+    font-size: 2em; }
+
+nav {
+  padding: 2rem; }
+
+.logo {
+  height: 50px;
+  width: 150px;
+  float: left;
+  margin: 0.5rem; }
+
+/* Main navi */
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 27px; }
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px; }
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s; }
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid white; }
+
+/* Mobile navi */
+.mobile-nav-icon {
+  float: right;
+  margin: .5rem 0;
+  cursor: pointer;
+  display: none; }
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff; }
+
+/* Sticky navi */
+.sticky {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2d98da;
+  box-shadow: 0 2px 4px #71a9cc;
+  z-index: 9999;
+  transition: all 2s, ease-in-out; }
+
+.sticky .main-nav {
+  margin-top: 18px; }
+
+.sticky .main-nav li a {
+  padding: 16px 0;
+  color: white; }
