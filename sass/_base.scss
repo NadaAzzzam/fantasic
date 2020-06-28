@@ -11,6 +11,9 @@ $footerdeepdark:#222835;
 
 //------- end variables -------//
 
+
+
+
 body{
 font-family: 'Lato', 'Arial', sans-serif;
 font-weight: 400;
@@ -25,6 +28,22 @@ overflow-x: hidden;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 5rem;
+
+}
+.heading-secondary{
+    color: black ;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+
+}
+.heading-secondary p{
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    word-spacing: 1px;
+    font-weight: 300;
+    margin: 0 14px;
 
 }
 
@@ -43,8 +62,8 @@ overflow-x: hidden;
 h2 {
     font-size: 180%;
 }
-h1, h2, h3 {
-    margin: 30px 0;
+h1, h2, h3 ,h4 ,h5,h6 {
+    margin-bottom: 15px;
     letter-spacing: 1px;
     font-weight: 700;
     text-transform: uppercase;
@@ -60,6 +79,9 @@ a {
     color: $ContessaColor;
 
 }
+.light-text p{
+    color: $AltoColor !important;
+}
 a:hover {
     color: $ContessaColor;
     text-decoration: none;
@@ -69,13 +91,21 @@ a:hover {
 
 .owl-theme .owl-nav {
     position: relative;
-    bottom: 5.5rem;
+    bottom: 6.5rem;
     color: white;
-    width: 4rem;
-    left: 50%;
+    width: 8rem;
+    left: 48%;
 }
 button:focus , .owl-prev , button:focus, .owl-next  {
     outline: unset !important; 
     background-color: transparent !important;
     /* outline: 5px auto -webkit-focus-ring-color; */
+}
+.owl-theme .owl-nav [class*=owl-]{
+    margin: 0 !important;
+}
+::selection {
+    background:$ContessaColor;
+    color: #fff;
+    text-shadow: none;
 }

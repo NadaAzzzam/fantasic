@@ -1,0 +1,118 @@
+.section{
+    padding: 80px 0;
+    &-input{
+        border: unset;
+        background-color: #eaeaea;
+        padding: 2.4rem 1rem;
+        width: 100%;
+        margin-bottom: 2rem;
+        color: $GrayColor;
+
+    }
+    &-input:focus{
+        outline: none;
+        color: $GrayColor;
+        background-color: #eaeaea;
+        outline: unset;
+        box-shadow:unset;
+        border-color: unset;
+
+    }
+    &-ourteam{
+    padding-bottom: 15rem;
+    &-img{
+        width: 17rem;
+        margin: -2px;
+    }
+        &-banner{
+        background-image: url('../imgs/team-bg.jpg');
+        height: 23rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left center;
+        position: relative;
+
+        }
+    }
+    &-feature {
+    padding-bottom: 80px;
+
+    & p{
+        color: $GrayColor;
+        font-weight: 500;
+
+    }
+   & [class*=col-md-3]{
+        border: 1px dotted #d9d9d9;
+        padding-bottom: 1rem;
+        padding-top: 4rem;    }
+}
+    &-about{
+        background-image:url("../imgs/bestapp-bg.jpg");
+        // height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+    }
+    & p{
+        color: $GrayColor ;
+    }
+&-icon{
+    cursor: pointer;
+    margin: 0 5px 15px 0;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 38px !important;
+    text-shadow: none;
+    border: 2px solid $AltoColor;
+    border-radius: 3px;
+    text-align: center !important;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    color: $AltoColor !important;
+
+} 
+&-icon:hover{
+    color: $ContessaColor !important;
+    border: 2px solid $ContessaColor;
+
+
+}
+&-si-big{
+    width: 6rem;
+    height: 6rem;
+    font-size: 1.7rem;
+    line-height: 6rem !important;
+
+}
+&-support{
+    padding: 80px;
+    padding-top: 0;
+    background-image: url('../imgs/support-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    &-card{
+        background-color: white;
+        padding: 5rem 6rem;
+    }
+    &-box{
+        background-color: #eaeaea;
+        padding: 2rem 0;
+
+    }
+    &-box p{
+         color: #8F8F8F;
+    font-weight: 500;
+    }
+   
+}
+} 
+.about-icon{
+    border: 2px solid $ContessaColor !important;
+    color: $ContessaColor !important;
+
+}
