@@ -1,12 +1,19 @@
     .home{
     background-image:url("../imgs/home-bg.jpg");
-    height: 99vh;
+    height: 100%;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     // margin-bottom: 50px;
+    &__hero-img{
+        width: 15rem;
     }
+    &__hero-text{
+        margin: auto;
+    }
+    }
+    
     .title-home{
     color: #a5b8c3;
     font-size: .6em;

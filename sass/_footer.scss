@@ -1,0 +1,69 @@
+.footer{
+   &-dark{
+    background-color: $footerdark;
+    padding: 4rem;
+    & h3 , p{
+    color: $AltoColor !important;
+    }
+    & p {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 200;
+        }
+
+} 
+&-deepdark{
+    background-color: $footerdeepdark;
+    color: $AltoColor !important;
+
+    padding: 1.5rem;
+    & a{
+        margin: 1rem;
+    text-transform: capitalize;
+    }
+
+}
+&-social-icon {
+    cursor: pointer;
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 38px!important;
+    text-shadow: none;
+    border: 1px solid $AltoColor;
+    border-radius: 3px;
+    // overflow: hidden;
+    text-align: center!important;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    
+   
+}
+
+&-si-facebook:hover{
+    color: #3b5998 !important;
+    border: 1px solid #3b5998 ;
+}
+&-si-twitter:hover{
+    color: #00aced !important;
+    border: 1px solid #00aced  ;
+}
+&-si-behance:hover{
+    color: #053EFF !important;
+    border: 1px solid #053EFF ;
+}
+&-si-basketball:hover{
+    color: $ContessaColor !important;
+    border: 1px solid $ContessaColor ;
+}
+
+&-si-small {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 30px!important;
+    color: $AltoColor !important;
+
+}
+}

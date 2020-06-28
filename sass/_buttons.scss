@@ -1,0 +1,40 @@
+.btn{
+    display: inline-block  !important;
+    padding: 10px 30px ;
+    text-decoration: none !important;
+    border-radius: unset !important;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s !important;
+    transition: background-color 0.2s, border 0.2s, color 0.2s !important;
+}
+.btn-sm{
+    padding: 7px 16px !important;
+
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: unset !important;
+}
+.btn-full{
+    background-color: $Arrowtown;
+    border: 1px solid $Arrowtown;
+    color: #fff;
+    margin-right: 15px;
+}
+.btn-ghost{
+    border: 1px solid $GalleryColor;
+    color: $GalleryColor;
+}
+.btn-ghost:hover, .btn-ghost:active {
+    border: 1px solid $ArrowtownDark;
+    color: #fff;
+}
+
+.btn-full:hover, .btn-full:active {
+    border: 1px solid $ArrowtownDark;
+}
+
+.btn:hover, .btn:active, input[type=submit]:hover, input[type=submit]:active {
+    background-color: $ArrowtownDark;
+    color: white;
+}
+
