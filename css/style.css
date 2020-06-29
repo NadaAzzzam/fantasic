@@ -12394,7 +12394,7 @@ button:focus, .owl-prev, button:focus, .owl-next {
 
 .home {
   background-image: url("../imgs/home-bg.jpg");
-  height: 100vh;
+  height: 100%;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12546,17 +12546,16 @@ nav {
 @media only screen and (max-width: 1023px) {
   .logo {
     width: 120px !important;
-    height: 30px; }
+    height: 45px; }
   .main-nav {
-    display: block;
-    padding: 0 !important; }
+    display: block; }
   .main-nav {
     display: none; }
   .mobile-nav-icon {
     display: inline-block; }
   .main-nav {
     float: left;
-    margin-top: 30px; }
+    margin-top: 0px; }
   .main-nav li {
     display: block;
     margin-left: 0.3rem; }
@@ -12583,6 +12582,10 @@ nav {
     display: none; } }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
+  .home {
+    height: 100% !important; }
+  .hero {
+    padding: 4rem 0; }
   .btn-fushia {
     margin-top: 13px !important; }
   .section {
@@ -12610,9 +12613,15 @@ nav {
     font-size: 1.3rem !important;
     line-height: 4rem !important; }
   .section-si-big {
-    line-height: 4rem !important; } }
+    line-height: 4rem !important; }
+  .section-about {
+    padding-bottom: 1rem; } }
 
 @media screen and (max-width: 480px) {
+  .home {
+    height: 100% !important; }
+  .hero {
+    padding: 4rem 0; }
   .section-ourteam {
     padding-bottom: 0 !important; }
   .btn-fushia {

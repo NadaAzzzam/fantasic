@@ -7,20 +7,19 @@
 
 
 @media only screen and (max-width: 1023px) {
+   
     .logo{
         width: 120px !important;
-        // margin-bottom: 20px;
-        height: 30px;
+        height: 45px;
     }
      .main-nav{
         display: block;
-        padding: 0 !important;
     }
     .main-nav { display: none; }
     .mobile-nav-icon {display: inline-block;}
     .main-nav {
         float: left;
-        margin-top: 30px;
+        margin-top: 0px;
     }
     
     .main-nav li {
@@ -56,24 +55,16 @@
         display: none;
 
     }
-    // .home__hero-img{
-    //     display: none;
-    // }
-}
-// @media screen and (min-width: 768px) and (max-width: 1023px)  {
-//     .heading-primary{
-//         margin-bottom: 9px;
-//     }
-//     .btn-full{
-//         margin-right: 0;
-//     }
-//     .owl-theme .owl-nav{
-//         width: unset;
-//         position: unset;
 
-//     }
-// }
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px)  {
+    .home{
+        height: 100% !important;
+    }
+    .hero{
+        padding: 4rem 0;
+    }
     .btn-fushia{
         margin-top: 13px !important;
 
@@ -118,10 +109,20 @@
     .section-si-big{
         line-height: 4rem !important;
     }
+    .section-about{
+        padding-bottom: 1rem;
+
+    }
 }
 
 //smartphone landscape
 @media screen and (max-width: 480px) {
+    .home{
+        height: 100% !important;
+    }
+    .hero{
+        padding: 4rem 0;
+    }
     .section-ourteam {
          padding-bottom: 0!important; 
     }

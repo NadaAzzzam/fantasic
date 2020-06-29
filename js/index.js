@@ -61,7 +61,22 @@ $(document).ready(function(){
     items:1,
     navText : ["<i class='far fa-dot-circle'></i>----","<i class='far fa-dot-circle'></i>----<i class='far fa-dot-circle'></i>"],
     dots:false,
-    nav:true
+    nav:true,
+    responsive: {
+      0: {
+        items: 1,
+         autoplay:false
+
+      },
+      768: {
+        items: 1,
+        autoplay:false
+
+      },
+      1170: {
+        items:1
+      }
+    }
 
 })
 $('.play').on('click',function(){
