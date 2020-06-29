@@ -6,7 +6,14 @@
 }
 
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
+    #hero-section.owl-carousel .owl-dots{
+        bottom: 3rem !important;
+
+    }
+    .section-support-card {
+        padding: 3rem 4rem !important;
+    }
    
     .logo{
         width: 120px !important;
@@ -51,6 +58,11 @@
     }
 }
 @media only screen and (max-width: 992px) {
+    .section-support-box{
+        padding-top: 2rem;
+    margin-bottom: 2rem;
+    }
+    
     .hero .col-md-3{
         display: none;
 
@@ -71,6 +83,16 @@
     .section-feature {
         padding-bottom: 40px !important;
     }
+    #hero-section.owl-carousel .owl-dots {
+      
+        bottom: 2rem !important;
+        left: 1rem;
+
+    }
+    .heading-primary {
+    
+        margin-bottom: 3rem !important;
+    }
 
 }
 
@@ -82,8 +104,7 @@
         padding: 4rem 0;
     }
     .btn-fushia{
-        margin-top: 13px !important;
-
+        width: 100%;
     }
     .section {
         padding: 30px 0 !important;
@@ -129,10 +150,23 @@
         padding-bottom: 1rem;
 
     }
+    #hero-section.owl-carousel .owl-dots {
+      
+        bottom: -2rem !important;
+
+    }
 }
 
 //smartphone landscape
 @media screen and (max-width: 480px) {
+    .footer-deepdark a {
+        margin: 5px !important;
+    }
+    #hero-section.owl-carousel .owl-dots {
+      
+        bottom: -2rem !important;
+
+    }
     .home{
         height: 100% !important;
     }
@@ -143,7 +177,7 @@
          padding-bottom: 0!important; 
     }
     .btn-fushia{
-        margin-top: 13px !important;
+        width: 100%;
 
     }
     .footer-dark{
