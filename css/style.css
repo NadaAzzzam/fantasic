@@ -12306,6 +12306,10 @@ a.text-dark:focus, a.text-dark:hover {
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #869791; }
 
+.reverse-div {
+  -webkit-flex-flow: column-reverse;
+  flex-flow: column-reverse; }
+
 body {
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 400;
@@ -12472,7 +12476,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #2d98da;
+  background-color: #ebebeb;
   box-shadow: 0 2px 4px #71a9cc;
   z-index: 9999;
   transition: all 2s, ease-in-out; }
@@ -12498,7 +12502,7 @@ nav {
 
 .btn.focus, .btn:focus {
   outline: 0;
-  box-shadow: unset !important; }
+  box-shadow: 0 4px 9px 0px #8a8585 !important; }
 
 .btn-full {
   background-color: #998675;
@@ -12514,7 +12518,8 @@ nav {
   .btn-fushia:hover {
     background-color: #9c5964 !important;
     border: 1px solid #9c5964 !important;
-    color: white; }
+    color: white;
+    box-shadow: 0 4px 9px 0px #8a8585; }
 
 .btn-ghost {
   border: 1px solid #ebebeb;
@@ -12522,14 +12527,17 @@ nav {
 
 .btn-ghost:hover, .btn-ghost:active {
   border: 1px solid #887769;
-  color: #fff; }
+  color: #fff;
+  box-shadow: 0 4px 9px 0px #8a8585; }
 
 .btn-full:hover, .btn-full:active {
-  border: 1px solid #887769; }
+  border: 1px solid #887769;
+  box-shadow: 0 4px 9px 0px #8a8585; }
 
 .btn:hover, .btn:active, input[type=submit]:hover, input[type=submit]:active {
   background-color: #887769;
-  color: white; }
+  color: white;
+  box-shadow: 0 4px 9px 0px #8a8585; }
 
 @media (max-width: 1200px) {
   nav.navbar {
@@ -12573,6 +12581,72 @@ nav {
 @media only screen and (max-width: 992px) {
   .hero .col-md-3 {
     display: none; } }
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .btn-fushia {
+    margin-top: 13px !important; }
+  .section {
+    padding: 30px 0 !important; }
+  .section-feature [class*=col-md-3] {
+    border: unset !important;
+    padding-bottom: 1rem !important;
+    padding-top: 0rem !important; }
+  .section-ourteam {
+    padding-bottom: 0rem !important; }
+  .section-support-card {
+    padding: 9px !important; }
+  .section-support {
+    padding: 0 !important; }
+  .heading-primary {
+    margin-bottom: 9px; }
+  .btn-full {
+    margin-right: 0; }
+  .owl-theme .owl-nav {
+    width: unset;
+    position: unset; }
+  .section-si-big {
+    width: 4rem !important;
+    height: 4rem !important;
+    font-size: 1.3rem !important;
+    line-height: 4rem !important; }
+  .section-si-big {
+    line-height: 4rem !important; } }
+
+@media screen and (max-width: 480px) {
+  .section-ourteam {
+    padding-bottom: 0 !important; }
+  .btn-fushia {
+    margin-top: 13px !important; }
+  .footer-dark {
+    padding: 1rem !important; }
+  .btn-full {
+    margin-right: 0; }
+  .heading-primary {
+    margin-bottom: 9px; }
+  .owl-theme .owl-nav {
+    width: unset;
+    position: unset; }
+  .section-support {
+    padding: 0 !important; }
+  .section-support-card {
+    padding: 9px !important; }
+  .section-si-big {
+    width: 4rem !important;
+    height: 4rem !important;
+    font-size: 1.3rem !important;
+    line-height: 4rem !important; }
+  .section-feature [class*=col-md-3] {
+    border: unset !important;
+    padding-bottom: 1rem !important;
+    padding-top: 0rem !important; }
+  .section-si-big {
+    line-height: 4rem !important; }
+  .section-feature {
+    padding-bottom: 20px !important; }
+  .section {
+    padding: 20px 0 !important; }
+  .section-about {
+    padding-bottom: 1rem; } }
 
 .section-testimonial {
   background-image: url("../imgs/clients-bg.jpg");
@@ -12716,7 +12790,7 @@ nav {
   .section-ourteam {
     padding-bottom: 15rem; }
     .section-ourteam-img {
-      width: 17rem;
+      width: 17vw;
       margin: -2px; }
     .section-ourteam-banner {
       background-image: url("../imgs/team-bg.jpg");
@@ -12748,7 +12822,7 @@ nav {
     width: 40px;
     height: 40px;
     font-size: 20px;
-    line-height: 38px !important;
+    line-height: 6rem;
     text-shadow: none;
     border: 2px solid #d9d9d9;
     border-radius: 3px;
@@ -12763,7 +12837,7 @@ nav {
     width: 6rem;
     height: 6rem;
     font-size: 1.7rem;
-    line-height: 6rem !important; }
+    line-height: 6rem; }
   .section-support {
     padding: 80px;
     padding-top: 0;
@@ -12776,7 +12850,8 @@ nav {
       padding: 5rem 6rem; }
     .section-support-box {
       background-color: #eaeaea;
-      padding: 2rem 0; }
+      padding: 2rem 0;
+      overflow-wrap: break-word; }
     .section-support-box p {
       color: #8F8F8F;
       font-weight: 500; }

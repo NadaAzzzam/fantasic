@@ -14,7 +14,7 @@
 }
 .btn.focus, .btn:focus {
     outline: 0;
-    box-shadow: unset !important;
+    box-shadow: 0 4px 9px 0px #8a8585 !important;
 }
 .btn-full{
     background-color: $Arrowtown;
@@ -31,6 +31,7 @@
         background-color:#9c5964 !important;
         border: 1px solid #9c5964 !important;
         color: white;
+        box-shadow: 0 4px 9px 0px #8a8585;
 
     }
 }
@@ -42,14 +43,20 @@
 .btn-ghost:hover, .btn-ghost:active {
     border: 1px solid $ArrowtownDark;
     color: #fff;
+    box-shadow: 0 4px 9px 0px #8a8585;
+
 }
 
 .btn-full:hover, .btn-full:active {
     border: 1px solid $ArrowtownDark;
+    box-shadow: 0 4px 9px 0px #8a8585;
+
 }
 
 .btn:hover, .btn:active, input[type=submit]:hover, input[type=submit]:active {
     background-color: $ArrowtownDark;
     color: white;
+    box-shadow: 0 4px 9px 0px #8a8585;
+
 }
 

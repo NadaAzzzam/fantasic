@@ -31,7 +31,7 @@ $(document).ready(function(){
   AOS.init();
   AOS.init({
     // Global settings:
-    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    disable: true, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
     startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
     initClassName: 'aos-init', // class applied after initialization
     animatedClassName: 'aos-animate', // class applied on animation
@@ -56,7 +56,7 @@ $(document).ready(function(){
   $('#hero-section').owlCarousel({
     loop:true,
     autoplay:true,
-    autoplayTimeout:1000,
+    autoplayTimeout:3000,
     autoplayHoverPause:true,
     items:1,
     navText : ["<i class='far fa-dot-circle'></i>----","<i class='far fa-dot-circle'></i>----<i class='far fa-dot-circle'></i>"],
@@ -65,11 +65,28 @@ $(document).ready(function(){
 
 })
 $('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[2000])
+    owl.trigger('play.owl.autoplay',[3000])
 })
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
+
+
+// add reverse coulmn class
+
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    $('.about-reverse').addClass("reverse-div")
+  } else {
+    $('.about-reverse').removeClass("reverse-div")
+  }
+}
+
+var x = window.matchMedia("(max-width: 767px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
 
 
 
@@ -85,14 +102,14 @@ $('.stop').on('click',function(){
       margin: 0,
       autoplay: true,
       dots:true,
-      autoplayTimeout: 2000,
+      autoplayTimeout: 3000,
       smartSpeed: 450,
       responsive: {
         0: {
           items: 1
         },
         768: {
-          items: 2
+          items: 1
         },
         1170: {
           items: 3

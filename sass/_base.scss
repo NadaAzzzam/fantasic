@@ -12,7 +12,10 @@ $footerdeepdark:#222835;
 //------- end variables -------//
 
 
-
+.reverse-div {
+    -webkit-flex-flow: column-reverse;
+    flex-flow: column-reverse;
+}
 
 body{
 font-family: 'Lato', 'Arial', sans-serif;
