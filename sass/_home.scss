@@ -43,4 +43,33 @@
     }
     }
 
+
+    #hero-section.owl-carousel .owl-dots .owl-dot.active span,
+#hero-section.owl-carousel .owl-dots .owl-dot:hover span {
+    background: $AltoColor;
+    transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+#hero-section.owl-carousel .owl-dots{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 4rem;
+}
+#hero-section.owl-carousel .owl-dots .owl-dot{
+display: inline-block;
+}
+#hero-section.owl-carousel .owl-dots .owl-dot span {
+    background: $AltoColor;
+    display: inline-block;
+    height: 20px;
+    margin: 0 2px 5px;
+    transform: translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width: 20px;
+    border-radius: 50%;
+
+}
+
     

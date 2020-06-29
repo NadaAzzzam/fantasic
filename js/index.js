@@ -59,9 +59,8 @@ $(document).ready(function(){
     autoplayTimeout:3000,
     autoplayHoverPause:true,
     items:1,
-    navText : ["<i class='far fa-dot-circle'></i>----","<i class='far fa-dot-circle'></i>----<i class='far fa-dot-circle'></i>"],
-    dots:false,
-    nav:true,
+    dots:true,
+    nav:false ,
     responsive: {
       0: {
         items: 1,

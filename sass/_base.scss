@@ -92,21 +92,21 @@ a:hover {
 
 // owel customization
 
-.owl-theme .owl-nav {
-    position: relative;
-    bottom: 6.5rem;
-    color: white;
-    width: 8rem;
-    left: 48%;
-}
+// .owl-theme .owl-dots {
+//     position: relative;
+//     bottom: -0.5rem;
+//     color: white;
+//     width: 8rem;
+//     left: 40%;
+// }
 button:focus , .owl-prev , button:focus, .owl-next  {
     outline: unset !important; 
     background-color: transparent !important;
     /* outline: 5px auto -webkit-focus-ring-color; */
 }
-.owl-theme .owl-nav [class*=owl-]{
-    margin: 0 !important;
-}
+// .owl-theme .owl-dots [class*=owl-]{
+//     margin: 0 !important;
+// }
 ::selection {
     background:$ContessaColor;
     color: #fff;

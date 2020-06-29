@@ -12372,20 +12372,10 @@ a:hover {
   color: #bc6372;
   text-decoration: none; }
 
-.owl-theme .owl-nav {
-  position: relative;
-  bottom: 6.5rem;
-  color: white;
-  width: 8rem;
-  left: 48%; }
-
 button:focus, .owl-prev, button:focus, .owl-next {
   outline: unset !important;
   background-color: transparent !important;
   /* outline: 5px auto -webkit-focus-ring-color; */ }
-
-.owl-theme .owl-nav [class*=owl-] {
-  margin: 0 !important; }
 
 ::selection {
   background: #bc6372;
@@ -12424,6 +12414,32 @@ button:focus, .owl-prev, button:focus, .owl-next {
     font-size: 3.5em; }
   .home .home-text p {
     font-size: 2em; }
+
+#hero-section.owl-carousel .owl-dots .owl-dot.active span,
+#hero-section.owl-carousel .owl-dots .owl-dot:hover span {
+  background: #d9d9d9;
+  transform: translate3d(0px, -50%, 0px) scale(0.7); }
+
+#hero-section.owl-carousel .owl-dots {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 4rem; }
+
+#hero-section.owl-carousel .owl-dots .owl-dot {
+  display: inline-block; }
+
+#hero-section.owl-carousel .owl-dots .owl-dot span {
+  background: #d9d9d9;
+  display: inline-block;
+  height: 20px;
+  margin: 0 2px 5px;
+  transform: translate3d(0px, -50%, 0px) scale(0.3);
+  transform-origin: 50% 50% 0;
+  transition: all 250ms ease-out 0s;
+  width: 20px;
+  border-radius: 50%; }
 
 nav {
   padding-top: 2rem; }
@@ -12579,7 +12595,17 @@ nav {
 
 @media only screen and (max-width: 992px) {
   .hero .col-md-3 {
-    display: none; } }
+    display: none; }
+  .btn-full {
+    margin-right: 0 !important; }
+  .section-support-card {
+    padding: 3rem 3rem !important; }
+  .section-ourteam {
+    padding-bottom: 6rem !important; }
+  .section {
+    padding: 40px 0 !important; }
+  .section-feature {
+    padding-bottom: 40px !important; } }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .home {
