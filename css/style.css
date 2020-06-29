@@ -12571,14 +12571,13 @@ nav {
     width: 120px !important;
     height: 45px; }
   .main-nav {
-    display: block; }
-  .main-nav {
-    display: none; }
+    float: left;
+    margin-top: 3rem !important;
+    right: 9rem;
+    display: none;
+    position: relative; }
   .mobile-nav-icon {
     display: inline-block; }
-  .main-nav {
-    float: left;
-    margin-top: 0px; }
   .main-nav li {
     display: block;
     margin-left: 0.3rem; }
@@ -12588,13 +12587,8 @@ nav {
     border: 0;
     padding: 10px 0;
     font-size: 100%; }
-  .sticky .main-nav {
-    margin-top: 10px; }
-  .sticky .main-nav li a:link,
-  .sticky .main-nav li a:visited {
-    padding: 10px 0; }
-  .sticky .mobile-nav-icon i {
-    color: white; }
+  .nav-item.btn-full {
+    margin-left: -4px !important; }
   body {
     font-size: 14px; }
   .home__hero-img {
@@ -12640,7 +12634,8 @@ nav {
   .section-support-card {
     padding: 9px !important; }
   .section-support {
-    padding: 0 !important; }
+    padding: 0 !important;
+    padding-bottom: 10px !important; }
   .heading-primary {
     margin-bottom: 9px; }
   .btn-full {
@@ -12683,7 +12678,8 @@ nav {
     width: unset;
     position: unset; }
   .section-support {
-    padding: 0 !important; }
+    padding: 0 !important;
+    padding-bottom: 10px !important; }
   .section-support-card {
     padding: 9px !important; }
   .section-si-big {
@@ -12703,6 +12699,11 @@ nav {
     padding: 20px 0 !important; }
   .section-about {
     padding-bottom: 1rem; } }
+
+@media screen and (max-width: 332px) {
+  .main-nav {
+    margin-top: 0 !important;
+    position: unset; } }
 
 .section-testimonial {
   background-image: url("../imgs/clients-bg.jpg");
